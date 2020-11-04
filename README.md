@@ -1,5 +1,5 @@
 # Gifos
-# Segundo proyecto de la carrera Desarrollo Web Full Stack
+# Segundo proyecto de la carrera Desarrollo Web Full Stack de Acamica
 
 # Funcionalidades
 1. Poder buscar gifs 
