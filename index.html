@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="estilos/sailorDayTheme.css" type="text/css">
+    <link rel="stylesheet" href="estilos/sailorNightTheme.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,600,700&display=swap" rel="stylesheet">
+    <title>gifOS</title>
+</head>
+
+<body class="dayTheme">
+    <p class="parrafo1 dayTheme">¡Bienvenidos/as a Guifos.com! ------Donde los gifs están.//////Número de visitas:12.765.803</p>
+    <div class="divNavbar">
+        <img id="logo" class="dayTheme" src="assets/gifOF_logo.png" alt="logo gifOs">
+        <div class="botonera">
+            <button id="btnCrearGuifos" class="btnNavbar dayTheme" role="link" onclick="window.location='https://carlabisagnibalon-gifos.000webhostapp.com/videos/videos.html'">Crear Guifos</button>
+
+            <div>
+                <div id="btnNavbarTheme" class="dayTheme">
+                    <button class="btnNavbar dayTheme">Elegir tema</button>
+                    <button class="dropdown dayTheme">
+                        <img src="assets/dropdown.svg" alt="dropdown arrow" style="width: 10px; height: 6px;">
+                    </button>
+                </div>
+
+                <ul class="dropdownTheme dayTheme">
+                    <li><button id="dayTheme" class="btnElegirTheme dayTheme"><u>S</u>ailor Day</button></li>
+                    <li><button id="nightTheme" class="btnElegirTheme dayTheme">Sailor Night</button></li>
+                </ul>
+
+
+            </div>
+            <button id="btnMisGuifos" class="btnMisGuifos dayTheme" role="link" onclick="window.location='https://carlabisagnibalon-gifos.000webhostapp.com/videos/videos.html'"><u>M</u>is Guifos</button>
+        </div>
+    </div>
+    <div class="divBusqueda dayTheme">
+        <p class="dayTheme">Buscar</p>
+        <div>
+            <input id="inputBusqueda" type="search" placeholder="Buscar gifs, hashtags, temas, busca lo que quieras..." class="inputBusqueda">
+            <button id="btnBuscar" class="dayTheme"><img src="assets/lupa_inactive.svg" alt="lupa"/> Buscar</button>
+
+        </div>
+    </div>
+    <ul id="dropdownBusqueda" class="dayTheme">
+        <li><button class="sugBusqueda dayTheme">Sailor Moon</button></li>
+        <li><button class="sugBusqueda dayTheme">Kawaii </button></li>
+        <li><button class="sugBusqueda dayTheme">Sailor Day</button></li>
+    </ul>
+    <div id="div_busquedas" style="display: none;"></div>
+
+    <section id="section_sugeridos">
+        <h1 class="tituloGif dayTheme">Hoy te sugerimos:</h1>
+        <div class="grillaGif" style="grid-template-rows: calc((100vw - 240px)*0.25 - 12px)">
+            <div class="gifCuadrado gifSugeridos dayTheme" style="background-image: url('https://media1.giphy.com/media/XmlcYKVxTS704/giphy.gif?cid=d57b79bac8ab9747ee011ebc482ad363650fa332e1518b2a&rid=giphy.gif')">
+                <div class="tituloSugeridos dayTheme">#Kawaii<img class="btnCloseSugeridos" src="assets/close.svg" alt="close button"></div>
+                <button class="btnMasSugeridos dayTheme">Ver más...</button>
+            </div>
+            <div class="gifCuadrado gifSugeridos dayTheme" style="background-image: url('https://media3.giphy.com/media/ofUJBqWum5tLO/giphy.gif?cid=d57b79bac8ab9747ee011ebc482ad363650fa332e1518b2a&rid=giphy.gif')">
+                <div class="tituloSugeridos dayTheme">#SailorMoonCrystal<img class="btnCloseSugeridos" src="assets/close.svg" alt="close button"></div>
+                <button class="btnMasSugeridos dayTheme">Ver más...</button>
+            </div>
+            <div class="gifCuadrado gifSugeridos dayTheme" style="background-image: url('https://media2.giphy.com/media/bWSNwD6ClwQM0/giphy.gif?cid=d57b79bac8ab9747ee011ebc482ad363650fa332e1518b2a&rid=giphy.gif')">
+                <div class="tituloSugeridos dayTheme">#SailorMoon<img class="btnCloseSugeridos" src="assets/close.svg" alt="close button"></div>
+                <button class="btnMasSugeridos dayTheme">Ver más...</button>
+            </div>
+            <div class="gifCuadrado gifSugeridos dayTheme" style="background-image: url('https://media0.giphy.com/media/TsR0FijtCjpzW/giphy.gif?cid=d57b79bac8ab9747ee011ebc482ad363650fa332e1518b2a&rid=giphy.gif')">
+                <div class="tituloSugeridos dayTheme">#UsagiTsukino<img class="btnCloseSugeridos" src="assets/close.svg" alt="close button"></div>
+                <button class="btnMasSugeridos dayTheme">Ver más...</button>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <h1 id="parrafoBusqueda" class="tituloGif dayTheme">Tendencias</h1>
+        <div id="resultadoBusqueda" class="grillaGif"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <link rel="stylesheet" href="../estilos/sailorDayTheme.css" type="text/css">
+    <link rel="stylesheet" href="../estilos/sailorNightTheme.css" type="text/css">
+    <title>gifOs | videos</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js"></script>
+</head>
+
+<body class="dayTheme">
+    <p class="parrafo1 dayTheme">¡Bienvenidos/as a Guifos.com! ------Donde los gifs están.//////Número de visitas:12.765.803</p>
+
+    <div>
+        <a href="../index.html"><img id="videos_arrowBack" class="dayTheme" src="../assets/arrow.svg" alt="back arrow"></a>
+        <img id="videos_logoGifos" class="dayTheme" src="../assets/gifOF_logo.png" alt="logo gifOs">
+    </div>
+
+
+    <div id="videos_divInicio" class="videos_divInicio dayTheme">
+        <p class="dayTheme">Crear Gifos</p>
+        <figure class="dayTheme">
+            <img src="../assets/window_img.png" alt="Seguridad informática">
+            <figcaption>Aquí podrás crear tus propios Gifos</figcaption>
+        </figure>
+        <div class="videos_parrafosIniciales dayTheme">
+            <p>Crear tu <i><b>guifo</b></i> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:</p>
+            <p><b>1)</b> Dar permisos de acceso a la cámara(solo por el tiempo de uso)</p>
+            <p><b>2)</b> Capturar tu momento guifo</p>
+            <p><b>3)</b> Revisar el momento</p>
+            <p><b>4)</b> Listo para subir y compartir!</p>
+            <p>¿Quieres comenzar a crear tu <i><b>guifo</b></i> ahora?</p>
+        </div>
+        <div class="videos_botonesIniciales">
+            <button class="videos_cancelar dayTheme" role="link" onclick="window.location='https://https://carlabisagnibalon-gifos.000webhostapp.com/index.html'">Cancelar</button>
+            <button id="videos_btnComenzar" class="videos_comenzar dayTheme">Comenzar</button>
+        </div>
+    </div>
+
+    <div id="videos_divChequeo" class="videos_divChequeo dayTheme" style="display: none">
+        <p id="videos_tituloContenedorVideo" class="videos_titulodiv dayTheme">Un Chequeo Antes de Empezar<img class="btnCloseSugeridos" src="../assets/close.svg" alt="close button"></p>
+        <video id="videos_contenedorVideos" class="videos_contVideos">
+            </video>
+        <img id="videos_imgContenedor" src="../assets/lupa_inactive.svg" alt="gif" class="videos_contVideos" style="display: none">
+        <div id="videos_divContenedor" style="display: none" class="videos_contVideos">
+            <img alt="globo terraqueo" src="../assets/globe_img.png" class="videos_imgGlobo">
+            <p class="videos_subiendoTexto">Estamos subiendo tu guifo...</p>
+            <p class="videos_subiendoTiempo">Tiempo restante: <del>38 años</del> algunos minutos</p>
+        </div>
+
+        <div class="btnVideos">
+            <div id="videos_btnCapturar" class="videos_divbtnCapturar">
+                <button class="videos_btnCapturarimg dayTheme"><img id="videos_imgCamara" alt="camera" src="../assets/camera.svg"></button>
+                <button class="videos_btnCapturar dayTheme">Capturar</button>
+            </div>
+        </div>
+
+        <div class="btnVideos" style="display: none">
+            <div id="videos_btnListo" class="videos_divbtnCapturar">
+                <button class="videos_btnListoimg dayTheme"><img alt="camera" src="../assets/recording.svg"></button>
+                <button class="videos_btnListo dayTheme">Listo</button>
+            </div>
+        </div>
+
+        <div class="btnVideos" style="display: none">
+            <button id="videos_btnSubir" class="videos_comenzar dayTheme">Subir Guifo</button>
+            <button id="videos_btnRepetir" class="videos_cancelar dayTheme">Repetir Captura</button>
+        </div>
+
+        <div class="btnVideos" style="display: none">
+            <button id="videos_btnSubirCancelar" class="videos_cancelar dayTheme" role="link" onclick="window.location='https://lkfgifos.000webhostapp.com/videos/videos.html'">Cancelar</button>
+        </div>
+    </div>
+
+    <div id="videos_divSubido" class="videos_divInicio dayTheme" style="display: none;">
+        <p class="videos_titulodiv dayTheme">Guifo Subido Con Éxito<img class="btnCloseSugeridos" src="../assets/close.svg" alt="close button"></p>
+        <div class="videos_divContenedorGifNuevo">
+            <img id="videos_imgNuevoGif" src="../assets/lupa_inactive.svg" alt="gif creado">
+            <div>
+                <p class="videos_tituloGifNuevo dayTheme">Guifo creado con éxito</p>
+                <button id="videos_btnCopiarUrl" class="videos_btnGifNuevo dayTheme" style="margin-bottom: 14px;">Copiar Enlace Guifo</button>
+                <button id="videos_btnDescargarGif" class="videos_btnGifNuevo dayTheme">Descargar Guifo</button>
+            </div>
+        </div>
+        <button id="videos_btnListoSubido" class="videos_comenzar dayTheme" role="link" onclick="window.location='https://carlabisagnibalon-gifos.000webhostapp.com/videos/videos.html'">Listo</button>
+    </div>
+
+    <section>
+        <h1 class="tituloGif dayTheme">Mis guifos</h1>
+        <div id="videos_divContenedorMisGuifos" class="videos_divContenedorMisGuifos"></div>
+    </section>
+
+    <script src="scriptVideos.js"></script>
+</body>
+
+</html>

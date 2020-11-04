@@ -1,0 +1,197 @@
+body.dayTheme {
+    background: var(--rosaclaro);
+}
+
+p.dayTheme {
+    background: linear-gradient(270deg, var(--rosa) 0%, var(--gradientelight) 100%);
+}
+
+
+/* NAVBAR */
+
+.btnNavbar.dayTheme {
+    background: var(--rosa);
+    border: 1px solid var(--azuloscuro);
+    -webkit-box-shadow: inset -1px -1px 0 0 var(--sombrarosa), inset 1px 1px 0 0 white;
+    box-shadow: inset -1px -1px 0 0 var(--sombrarosa), inset 1px 1px 0 0 white;
+    color: var(--azuloscuro);
+}
+
+.btnNavbar.dayTheme:hover,
+.btnNavbar.dayTheme:active {
+    background: var(--rosaoscuro);
+    outline: 1px dotted var(--azuloscuro);
+    outline-offset: -3px;
+}
+
+#btnNavbarTheme.dayTheme:hover .btnNavbar,
+#btnNavbarTheme.dayTheme:hover .dropdown {
+    background: var(--rosaoscuro);
+    outline: 1px dotted var(--azuloscuro);
+    outline-offset: -3px;
+}
+
+.dropdown.dayTheme {
+    background: var(--rosa);
+    border: 1px solid var(--azuloscuro);
+    -webkit-box-shadow: inset -1px -1px 0 0 var(--sombrarosa), inset 1px 1px 0 0 white;
+    box-shadow: inset -1px -1px 0 0 var(--sombrarosa), inset 1px 1px 0 0 white;
+}
+
+.btnMisGuifos.dayTheme {
+    color: var(--azuloscuro);
+    background: none;
+}
+
+.btnMisGuifos.dayTheme:hover {
+    outline: 1px dotted var(--azuloscuro);
+    outline-offset: -3px;
+}
+
+.btnMisGuifos.dayTheme:active {
+    color: var(--grisclaro);
+    outline: none;
+}
+
+.dropdownTheme.dayTheme {
+    background: var(--grisclaro);
+    box-shadow: inset -2px -2px 0 0 var(--sombragris), inset 2px 2px 0 0 white;
+}
+
+.btnElegirTheme.dayTheme {
+    background: var(--blanco);
+    border: 1px solid var(--grisoscuro);
+    box-shadow: inset -1px -1px 0 0 var(--sombragris), inset 1px 1px 0 0 white;
+    color: var(--azuloscuro);
+}
+
+.btnElegirTheme.dayTheme:active,
+.btnElegirTheme.dayTheme:hover {
+    background: var(--rosaclaro);
+    border: 1px solid var(--lilaclaro);
+    box-shadow: inset -1px -1px 0 0 var(--sombrablanco), inset 1px 1px 0 0 white;
+}
+
+
+/* BUSQUEDA */
+
+.divBusqueda.dayTheme {
+    background: var(--grisclaro);
+    -webkit-box-shadow: inset -2px -2px 0 0 var(--sombragris), inset 2px 2px 0 0 white;
+    box-shadow: inset -2px -2px 0 0 var(--sombragris), inset 2px 2px 0 0 white;
+}
+
+#btnBuscar.dayTheme {
+    background: var(--grisclaro);
+    border: 1px solid var(--grisoscuro);
+    box-shadow: inset -1px -1px 0 0 var(--sombragris), inset 1px 1px 0 0 white;
+    color: var(--sombragris);
+}
+
+#btnBuscar.dayTheme:active {
+    background: var(--rosaoscuro);
+    outline: 1px dotted var(--azuloscuro);
+    outline-offset: -3px;
+    color: var(--azuloscuro);
+}
+
+.inputBusqueda:focus~#btnBuscar.dayTheme {
+    background: var(--rosa);
+    border: 1px solid var(--azuloscuro);
+    box-shadow: inset -1px -1px 0 0 var(--sombrarosa), inset 1px 1px 0 0 white;
+    color: var(--azuloscuro);
+}
+
+#dropdownBusqueda.dayTheme {
+    background: var(--grisclaro);
+    box-shadow: inset -2px -2px 0 0 var(--sombragris), inset 2px 2px 0 0 white;
+}
+
+.sugBusqueda.dayTheme {
+    background: var(--blanco);
+    border: 1px solid var(--grisoscuro);
+    box-shadow: inset -1px -1px 0 0 var(--sombragris), inset 1px 1px 0 0 white;
+    color: var(--azuloscuro);
+}
+
+.sugBusqueda.dayTheme:hover {
+    background: var(--grishover);
+    outline: 1px dotted var(--grisoscuro);
+    outline-offset: -3px;
+}
+
+
+/* SUGERIDOS */
+
+.tituloGif.dayTheme {
+    background: var(--fondoblanco);
+    border: 1px solid var(--rosaoscuro);
+    box-shadow: inset -2px -2px 0 0 var(--sombrablanco), inset 2px 2px 0 0 var(--sombrarosaoscuro);
+    color: var(--azuloscuro);
+}
+
+.tituloSugeridos.dayTheme {
+    background-image: linear-gradient(270deg, var(--rosa) 0%, var(--gradientelight) 100%);
+    box-shadow: inset -2px -2px 0 0 var(--sombragris), inset 2px 2px 0 0 white;
+    color: white;
+}
+
+.gifSugeridos.dayTheme {
+    box-shadow: inset -2px -2px 0 0 var(--sombragris), inset 2px 2px 0 0 white;
+    display: block;
+}
+
+.btnMasSugeridos.dayTheme,
+.btnBusquedasSS.dayTheme {
+    background: var(--gradientelight);
+    border: 1px solid var(--azul);
+    box-shadow: inset -2px -2px 0 0 var(--sombraceleste), inset 1px 1px 0 0 white;
+    color: white;
+}
+
+.gifResultado.dayTheme:hover {
+    box-shadow: inset -2px -2px 0 0 var(--sombragris), inset 2px 2px 0 0 white;
+    outline: 1px dotted var(--azuloscuro);
+    outline-offset: -2px;
+}
+
+
+/* VIDEOS */
+
+.videos_divInicio.dayTheme {
+    background: var(--grisclaro);
+    box-shadow: inset -2px -2px 0 0 var(--sombragris), inset 2px 2px 0 0 white;
+}
+
+.videos_cancelar.dayTheme,
+.videos_btnGifNuevo.dayTheme {
+    color: var(--azuloscuro);
+    background: var(--rosaclaro);
+    border: 1px solid var(--azuloscuro);
+    box-shadow: inset -1px -1px 0 0 var(--sombrarosa), inset 1px 1px 0 0 white;
+}
+
+.videos_cancelar:active.dayTheme,
+.videos_btnGifNuevo:active.dayTheme {
+    outline: 1px dotted var(--azuloscuro);
+    outline-offset: -4px;
+    background: var(--bgbtnvideos);
+}
+
+.videos_comenzar.dayTheme,
+.videos_btnCapturar.dayTheme,
+.videos_btnCapturarimg.dayTheme {
+    color: var(--azuloscuro);
+    background: var(--rosa);
+    border: 1px solid var(--azuloscuro);
+    box-shadow: inset -1px -1px 0 0 var(--sombrarosa), inset 1px 1px 0 0 white;
+}
+
+.videos_divChequeo.dayTheme {
+    background: var(--grisclaro);
+    box-shadow: inset -2px -2px 0 0 var(--sombragris), inset 2px 2px 0 0 white;
+}
+
+.videos_titulodiv.dayTheme {
+    background-image: linear-gradient(270deg, var(--rosa) 0%, var(--gradientelight) 100%);
+}
